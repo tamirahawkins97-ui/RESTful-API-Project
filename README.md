@@ -2,8 +2,6 @@
 
 A RESTful API built with Node.js and Express that connects to the [OMDb (Open Movie Database) API](http://www.omdbapi.com/). It enables clients to search for films by title and fetch detailed metadata using unique IMDb IDs while keeping private API credentials secure.
 
-**Repository:** [https://github.com/tamirahawkins97-ui/RESTful-API-Project.git](https://github.com/tamirahawkins97-ui/RESTful-API-Project.git)
-
 ---
 
 ## Features
