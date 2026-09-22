@@ -1,16 +1,18 @@
-//DEPENDANCIES 
-const express = require('express');
-const app = express();
+// DEPENDENCIES
 require('dotenv').config();
-const PORT = prcoess.env.OMDB_API_KEY;
+const express = require('express');
+const movieRoutes = require('./tamiras-Movie-RESTful-API/routes/movieRoutes');
+const app = express();
+const PORT = 1098;
 
-//MIDDLEWARE 
-// app.use('express.json');
-app.get('/api'(req,res)=>{
-    res.
-})
+// MIDDLEWARE (parse incoming JSON if needed)
+// app.use(express.json());
 
-//ROUTE
-app.listen(PORT, (req,res)=>{
-    console.log("Serving port at LocalHost: ${PORT}")
+// ROUTES
+// Mount all movie routes with the /api prefix
+app.use('/api', movieRoutes);
+
+// LISTENER
+app.listen(PORT, () => {
+  console.log(`Server listening on port: http://localhost:${PORT}`);
 });
